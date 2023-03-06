@@ -11,14 +11,14 @@ jobs:
       - name: syncmaster
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://github.com/ebrains-cls-interactive/Synaptic_Plasticity.git"
+          source_repo: "ebrains-cls-interactive/Synaptic_Plasticity"
           source_branch: "main"
           destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/rsmiriglia/synaptic-plasticity.git"
           destination_branch: "main"
       - name: synctags
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://github.com/ebrains-cls-interactive/Synaptic_Plasticity.git"
+          source_repo: "ebrains-cls-interactive/Synaptic_Plasticity"
           source_branch: "refs/tags/*"
           destination_repo: "https://ghpusher:${{ secrets.EBRAINS_GITLAB_ACCESS_TOKEN }}@gitlab.ebrains.eu/rsmiriglia/synaptic-plasticity.git"
           destination_branch: "refs/tags/*"
