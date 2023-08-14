@@ -3,6 +3,7 @@ name: Mirror to Ebrains
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   to_ebrains:
